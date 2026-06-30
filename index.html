@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema de Registro de Estudiantes</title>
+
+<link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1>📚 Sistema de Registro de Estudiantes</h1>
+
+<div class="formulario">
+
+<label>Nombre del estudiante</label>
+<input type="text" id="nombre">
+
+<label>Edad</label>
+<input type="number" id="edad">
+
+<button onclick="registrar()">
+Registrar Estudiante
+</button>
+
+</div>
+
+<h2>Listado de Estudiantes</h2>
+
+<input
+type="text"
+id="buscar"
+placeholder="Buscar estudiante..."
+onkeyup="buscar()">
+
+<br><br>
+
+<button onclick="borrarTodo()">
+Borrar todos los registros
+</button>
+
+<h3 id="total">
+Total estudiantes: 0
+</h3>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>#</th>
+
+<th>Nombre</th>
+
+<th>Edad</th>
+
+<th>Fecha</th>
+
+<th>Acción</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tabla">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
